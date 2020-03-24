@@ -1,4 +1,14 @@
 public class Booking{
+  private String bookingID;
+  private int numberOfGuests;
+  private 
 
 
+
+  public getBookingID(){
+    return this.bookingID;
+}
+
+  public getNumberOfGuests(){
+    return this.numberOfGuests;
 }
