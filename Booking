@@ -1,14 +1,58 @@
 public class Booking{
+
   private String bookingID;
+  private String customerID;
   private int numberOfGuests;
-  private 
+  private double arrivalTime;
+  private int bookingDuration;
+  private boolean approvalStatus;
+  private String customerName;
 
+  public String getBookingID(){
+    return bookingID;
+  }
+  
+  public String getCustomerID(){
+    return customerID;
+  }
 
-
-  public getBookingID(){
-    return this.bookingID;
-}
-
-  public getNumberOfGuests(){
-    return this.numberOfGuests;
+  public int getNumberOfGuests(){
+    return numberOfGuests;
+  }
+  
+  public int setNumberOfGuests(int numberOfGuests){
+    this.numberOfGuests = numberOfGuests;
+  }
+  
+  public double getArrivalTime(){
+    return arrivalTime;
+  }
+  
+  public double setArrivalTime(double arrivalTime){
+    this.arrivalTime = arrivalTime;
+   }
+  
+  public boolean getApprovalStatus(){
+    return approvalStatus;
+  }
+  
+  public boolean setApprovalStatus(boolean approvalStatus){
+    this.approvalStatus = approvalStatus;
+  }
+  
+  public String getCustomerName(){
+    return customerName;
+  }
+  
+  public String setCustomerName(String customerName){
+    this.customerName = customerName;
+  }
+  
+  public int getBookingDuration(){
+    return bookingDuration;
+  }
+  
+  public int setBookingDuration(int bookingDuration){
+    this.bookingDuration = bookingDuration;
+  }
 }
