@@ -1,5 +1,6 @@
 public class Booking{
-
+  
+  private Table[] tablesUsed;
   private String bookingID;
   private String customerID;
   private int numberOfGuests;
@@ -7,7 +8,22 @@ public class Booking{
   private int bookingDuration;
   private boolean approvalStatus;
   private String customerName;
-
+  
+  public Booking(String customerID, int numberOfGuests, double arrivalTime){
+    this.customerID = customerID;
+    this.numberOfGuests = numberOfGuests;
+    this.arrivalTime = arrivalTime;
+    this.bookingDuration = 1; 
+  }
+  
+  private static incrementCustomerCount(){
+    customerCount += numberOfGuests;
+  }
+  
+  private static deccrementCustomerCount(){
+    customerCount -= numberOfGuests;
+  }
+  
   public String getBookingID(){
     return bookingID;
   }
@@ -54,5 +70,10 @@ public class Booking{
   
   public int setBookingDuration(int bookingDuration){
     this.bookingDuration = bookingDuration;
+  }
+  
+  // should this be in the Booking or the Table class?
+  private boolean checkTableAvailability(Table[] table, ){
+    // scan through all tables and check whether there is an available table
   }
 }
