@@ -53,7 +53,7 @@ public class Employee {
  }
  public void display()
  {
-     System.out.println("编号"+this.ID+"姓名"+this.name+"职务"+this.position+"假期"+this.holiday+"薪水"
+     System.out.println("ID"+this.ID+"Name"+this.name+"position"+this.position+"holiday"+this.holiday+"salary"
  +this.sumSalary(this.holiday));
  }
 }
