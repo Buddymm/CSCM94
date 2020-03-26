@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="textFieldGuests" layoutX="24.0" layoutY="40.0" prefHeight="259.0" prefWidth="554.0">
+        <columns>
+          <TableColumn prefWidth="94.0" text="CustomerID" />
+          <TableColumn prefWidth="70.0" text="Date" />
+            <TableColumn text="Time" />
+            <TableColumn prefWidth="84.0" text="#Guests" />
+            <TableColumn prefWidth="119.0" text="Space Available?" />
+            <TableColumn prefWidth="106.0" text="Misc" />
+        </columns>
+      </TableView>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.bottomAnchor="412.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Booking">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="24.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonAdd" text="Approve" />
+      <Button layoutX="105.0" layoutY="312.0" mnemonicParsing="false" onAction="#buttonAdd" text="Decline" />
+   </children>
+</AnchorPane>
