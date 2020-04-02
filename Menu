@@ -17,17 +17,33 @@ public class Menu {
 	public String getCourseType() {
 		return courseType;
 	}
+	
+	public void setCourseType(String courseType) {
+		this.courseType = courseType;
+	}
 
 	public String getItemName() {
 		return itemName;
+	}
+	
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 	public String getItemDescription() {
 		return itemDescription;
 	}
+	
+	public void setItemDescription(String itemDescription) {
+		this.itemDescription = itemDescription;
+	}
 
 	public double getPriceOfItem() {
 		return priceOfItem;
+	}
+	
+	public void setPriceOfItem(double priceOfItem) {
+		this.priceOfItem = priceOfItem;	
 	}
 /* Not sure how to add functionality for adding and removing items
    I think this will work but need to test. */
