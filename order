@@ -1,0 +1,51 @@
+import java.util.Date;
+
+public class order {	
+	private String OrderID;
+	private String Itemsprepared;
+	private String Itemsserved;
+	private String Specialfood;
+	private boolean complete;
+	private String  CustomerId;
+	private int price;
+	private String OutstandingOrder;
+	Date dateofOrders = new Date();
+
+	public order(String OrderID, String Itemsprepared, String Itemserved) {
+		this.OrderID = OrderID;
+		this.Itemsprepared = Itemsprepared;
+		this.Itemsserved = Itemsserved;
+	}
+	
+	public void calculatebill() {
+		while(Itemsprepared != Itemsserved)
+			price++;//it is false.
+		//I don't know how to calculate the bill. I think it is about the menu.It needs not just the order.
+	}
+	
+	public String createOrderID() {
+		return OrderID;
+	}
+	public boolean whethercomplete() {
+		return complete;
+	}
+	
+	public String viewoutstandingOrder() {
+		return OutstandingOrder;
+	}
+	
+	public String notifyDailySpecial() {
+		return Specialfood;
+	}
+	public void alterorder() {
+		while(Itemsprepared != Itemsserved) {
+			// I don't know how to alter the order;
+		}
+	}
+	
+	public void cancelorder() {
+		if(complete) {
+			// I don't know how to cancel the order;
+		}
+	}
+}
